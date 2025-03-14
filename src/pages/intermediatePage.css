@@ -1,0 +1,43 @@
+.end-page {
+  height: 100vh; /* Full screen height */
+  width: 100vw; /* Full screen width */
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.end-page h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.end-page p {
+  color: #bbbbbb;
+  margin-bottom: 15px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #bbbbbb;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 15px;
+}

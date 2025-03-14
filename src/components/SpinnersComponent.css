@@ -1,0 +1,387 @@
+/* Page Styles */
+
+.spinner-scroll-container {
+  max-height: 710px; /* Adjust this value based on your layout */
+  overflow-y: auto; /* Enables vertical scrolling */
+  border: 2px solid #ffffff; /* Optional: Just for visibility */
+  padding: 10px;
+  border-radius: 10px;
+}
+.spinners-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Spinners Container */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+/* Row layout */
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row pre {
+  border-radius: 5px;
+  font-size: 14px;
+  width: 400px;
+  overflow-x: auto;
+}
+
+/* ===================== SPINNERS ===================== */
+
+/* 1. Simple Rotating Spinner */
+.spinner-1 {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #3498db;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* 2. Dual Color Spinner */
+.spinner-2 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-top: 5px solid #e74c3c;
+  border-right: 5px solid #f1c40f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* 3. Dots Bouncing */
+.spinner-3 {
+  width: 10px;
+  height: 10px;
+  background-color: #8e44ad;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* 4. Expanding Circle */
+.spinner-4 {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #2ecc71;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* 5. Bars Loader */
+.spinner-5 {
+  display: flex;
+  gap: 5px;
+}
+
+.spinner-5 div {
+  width: 5px;
+  height: 20px;
+  background-color: #ff5733;
+  animation: bars 1.2s infinite ease-in-out;
+}
+
+.spinner-5 div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.spinner-5 div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* 6. Rotating Square */
+.spinner-6 {
+  width: 40px;
+  height: 40px;
+  background-color: #ff4757;
+  animation: rotateSquare 1.5s infinite linear;
+}
+
+/* 7. Growing & Shrinking Circle */
+.spinner-7 {
+  width: 40px;
+  height: 40px;
+  background-color: #f39c12;
+  border-radius: 50%;
+  animation: growShrink 1.5s infinite ease-in-out;
+}
+
+/* 8. Three Dots Wave */
+.spinner-8 {
+  display: flex;
+  gap: 5px;
+}
+
+.spinner-8 div {
+  width: 10px;
+  height: 10px;
+  background-color: #2980b9;
+  border-radius: 50%;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.spinner-8 div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.spinner-8 div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* 9. Spinning Hexagon */
+.spinner-9 {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #00ffcc, #0099ff);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: spin 1.5s infinite linear;
+}
+
+/* 10. Pulse Ring */
+.spinner-10 {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 165, 0, 0.3);
+  border-top-color: #ffa500;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* 11. Expanding Squares */
+.spinner-11 {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ff4757;
+  position: relative;
+  animation: expandSquare 1.5s infinite ease-in-out;
+}
+
+.spinner-11::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ff6b81;
+  animation: expandSquare 1.5s infinite ease-in-out 0.2s;
+}
+
+/* 12. Rotating Star */
+.spinner-12 {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #ff00ff, #ff9900);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  animation: spin 2s infinite linear;
+}
+
+/* 13. Pulse Dot */
+.spinner-13 {
+  width: 15px;
+  height: 15px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* 14. Zig-Zag Loader */
+.spinner-14 {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #27ae60;
+  border-radius: 50%;
+  animation: zigZag 1.5s infinite ease-in-out;
+}
+
+/* 15. Loading Wave */
+.spinner-15 {
+  display: flex;
+  gap: 5px;
+}
+
+.spinner-15 div {
+  width: 8px;
+  height: 30px;
+  background-color: #1abc9c;
+  animation: wave 1.2s infinite ease-in-out;
+}
+
+.spinner-15 div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.spinner-15 div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.spinner-15 div:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.spinner-15 div:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+/* 16. Orbiting Dot */
+.spinner-16 {
+  width: 40px;
+  height: 40px;
+  background-color: #9b59b6;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 2s infinite linear;
+}
+
+.spinner-16::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 17. Rainbow Spinner */
+.spinner-17 {
+  width: 40px;
+  height: 40px;
+  background: conic-gradient(#3498db, #f1c40f, #e74c3c, #2ecc71, #3498db);
+  border-radius: 50%;
+  animation: spin 2s infinite linear;
+}
+
+/* 18. Flipping Square */
+.spinner-18 {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #16a085;
+  animation: flip 2s infinite ease-in-out;
+}
+
+/* ===================== ANIMATIONS ===================== */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateSquare {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes bars {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+}
+
+@keyframes growShrink {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes expandSquare {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes zigZag {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(2);
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(200px) rotateY(180deg);
+  }
+  100% {
+    transform: perspective(200px) rotateY(360deg);
+  }
+}

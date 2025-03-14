@@ -4,6 +4,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import HoverEffects from "../components/HoverEffects";
 import TypingBox from "../components/TypingBox";
 import { useNavigate } from "react-router-dom";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
 const textArray = [
   "Hover Effects: CSS hover effects allow elements to change appearance when a user hovers over them.",
@@ -39,7 +40,7 @@ function HoverPage() {
       </div>
       <div
         className="home-container-items2"
-        onClick={() => navigate("/freshPage")}
+        onClick={() => navigate("/fresher")}
       >
         <ArrowForwardIosIcon
           style={{
